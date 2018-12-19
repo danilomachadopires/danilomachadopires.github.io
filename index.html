@@ -27,22 +27,26 @@
     
     <br></br>
    <p align="justify" > 
-    This code presents model fitting for one (out of 12) of the discussed options from the title paper.
-    Model considered is derived from Davidson (1969) proposal, adapted to address the tendency to draws
-    in players of higher ratings and including a parameter for the advantage of playing white and accounting
-    for the variability in players activity. 
-In the paper we used Bayesian analysis of actual chess elite data to fit parametric statistical models 
-    that could subsidize proposals for change in rating systems. In half of our proposals, 
-    weighted likelihood density functions were used to emulate the behavior of dynamic rating systems.
-Models were compared using marginal likelihood based information criteria  as well as predictive distances.
-Most of our attempted models improved on Elo ratings and there is strong evidence that dynamic models
-    considering both white advantage and draws would result in more accurate systems.
+    This is a companion guide to the title paper. In here we present code for handling database, 
+       model fitting and predictive evaluation for one (out of 12) of the discussed models. 
+
+    In the paper we used Bayesian analysis of actual chess elite data to fit parametric statistical 
+       models that could subsidize proposals for change in rating systems. In half of our proposed models,
+       weighted likelihood functions were used to emulate the behavior of dynamic rating systems. 
+       Models were compared using marginal likelihood based information criteria as well as predictive distances.
+       Most of our attempted models improved on Elo ratings and there is strong evidence that dynamic models 
+       considering both white advantage and draws would result in more accurate systems.
+
+       Model presented in this example is derived from Davidson (1969) proposal, adapted to address the tendency
+       to draws in players of higher ratings, includes a parameter for the advantage of playing white and accounts
+       for the variability in players activity (dynamic version). 
+
        </p>
   
-   <h4><a href="https://danilomachadopires.github.io/ResultadosInferencia">1. Bayesian inference- Sample from the joint posterior distribution </h4>
+   <h4><a href="https://danilomachadopires.github.io/ResultadosInferencia">1. Bayesian inference - code and functions to organize data and draw samples from the joint posterior distribution </h4>
        
-  <h4>  <a href="https://danilomachadopires.github.io/descricao">2. Descriptive analysis -Training set  </h4>   
-  <h4>  <a href="https://danilomachadopires.github.io/predicao">3. Preditive analysis -Testing set 'A' and 'B'  </h4> 
+  <h4>  <a href="https://danilomachadopires.github.io/descricao">2. Descriptive analysis - code to summarize posterior distribution estimates and marginal likelihhods (fitting to the Training set)  </h4>   
+  <h4>  <a href="https://danilomachadopires.github.io/predicao">3. Preditive analysis - code to summarize predictive distribution Testing set 'A' and 'B' using both likelihood based and distance based criteria </h4> 
       <!-- <p><center><a href="https://lcaunifal.github.io/portalhalley/historia_seguro"target="_blank">1.1. Histórico dos Seguros</a></center></p>
     <p><center><a href="https://lcaunifal.github.io/portalhalley/historico_previdencia_social"target="_blank">1.2. Histórico da Previdência</a></center></p>-->
     
